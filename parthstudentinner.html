@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: black solid 2px;
+            display: grid;
+            grid-template-columns: repeat(3 ,auto);
+        }
+        .halo{
+            padding: 10px;
+            text-decoration: none;
+            border: solid black 2px;
+            height: 200px;
+            margin: 10px;
+            font-size: 40px;
+            text-align: center;
+            align-items: center;
+            padding-top: 40%;
+            height: 100px;
+            background-color:white;
+            color: black;
+            border-radius: 20px;
+            opacity: 0.7;
+          
+        }
+        body{
+            background-color: black;
+            opacity: 1;
+        }
+        #head{
+            border: solid black 2px;
+            background-color: #f3073e;
+            text-align: center;
+            font-size: 50px;
+            border-radius: 20px;
+        }
+        a:hover{
+           
+            background-color: red;
+            font-size: 50px;
+            color: black;
+            font-weight: bold;
+        }
+        #time{
+            
+            font-size: 20px;
+            margin-right: 10px;
+            background-color: white;
+            align-items: right;
+            margin-left: 900px;
+        }
+        #attendance{
+            background-image : url("be-present-attentive-secure-willing-attendance-here-teamwork-work-hard-be-present-attentive-secure-willing-attendance-here-166904368.jpg") ;
+            background-size: 540px;
+            background-repeat: no-repeat;
+            padding-left: 50px;
+            margin-left: 0;
+            height: 80px;
+        }
+        #marks{
+            background-image : url("unnamed.jpg") ;
+            background-size: 460px;
+            background-repeat: no-repeat;
+            background-position: center;
+            /* padding-left: 50px; */
+
+        }
+        #selfinfo{
+            background-image : url("istockphoto-877999642-1024x1024.jpg") ;
+            background-size: 460px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #guidance{
+            background-image : url("istockphoto-1097061230-612x612.jpg") ;
+            background-size: 460px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        #idea{
+            background-image : url("istockphoto-915188574-612x612.jpg") ;
+            background-size: 460px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #college{
+            background-image : url("istockphoto-944101964-612x612.jpg") ;
+            background-size: 550px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #grade{
+            background-image : url("istockphoto-172413295-612x612.jpg") ;
+            background-size: 550px;
+            background-repeat: no-repeat;
+            background-position: center;
+
+        }
+        #timetable{
+            background-image : url("istockphoto-1187175840-612x612.jpg") ;
+            background-size: 550px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #fees{
+            background-image : url("istockphoto-665659432-612x612.jpg") ;
+            background-size: 550px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <h3 id="head">hackez welcome you  </h3>
+    <span id="time"></span>
+    <div class="container">
+      
+        <a href="parth student info.html" class="halo" id="selfinfo" >self info</a>
+        <a href= "index.html" class="halo" id="marks" >marks </a>
+        <a href="attendance.html" class="halo" id="attendance">attendance</a>
+        <!-- <a href="parth.html" class="halo" id="guidance">guidance</a> -->
+        <a href="parth.html" class="halo" id="idea">ideas</a>
+        <a href="parth college info.html" class="halo" id="college">college info</a>
+        <!-- <a href="" class="halo" id="grade">grades</a> -->
+        <a href="MyFirstSchedule.html" class="halo" id="timetable">time table</a>
+        <!-- <a href="" class="halo" id="fees">fees</a> -->
+         
+    </div>
+    <script>
+        function timo(){
+            let time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(timo , 1000);
+
+        
+    </script>
+</body>
+</html>
